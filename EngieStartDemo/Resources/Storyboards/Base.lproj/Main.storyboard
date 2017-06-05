@@ -115,7 +115,7 @@
                                     <constraint firstItem="grI-mD-kjz" firstAttribute="centerX" secondItem="Gra-OV-gv8" secondAttribute="centerX" id="tdJ-14-J0W"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Hc-z0s" customClass="NGRoundButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Hc-z0s" customClass="NGRoundButton">
                                 <rect key="frame" x="27.5" y="296" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.99895304439999999" green="0.16319701079999999" blue="0.53923797610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -390,7 +390,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MyAccount" id="CNX-S1-cS3">
-                        <barButtonItem key="leftBarButtonItem" tag="1" image="menu_icon" id="hco-GO-qdE"/>
+                        <barButtonItem key="leftBarButtonItem" tag="221" image="menu_icon" id="hco-GO-qdE" userLabel="MenuItem"/>
                     </navigationItem>
                     <connections>
                         <outlet property="NameUserLabel" destination="dst-ui-9LG" id="sXy-QM-SaQ"/>

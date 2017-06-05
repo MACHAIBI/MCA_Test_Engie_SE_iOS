@@ -19,7 +19,7 @@
 		E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */; };
 		E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099F11EE55016007F66DA /* NGRoundButton.m */; };
 		E96099F51EE55C2D007F66DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099F71EE55C2D007F66DA /* Main.storyboard */; };
-		E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FD1EE56068007F66DA /* NSString+Engie.m */; };
+		E96099FE1EE56068007F66DA /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FD1EE56068007F66DA /* NSString+Extended.m */; };
 		E9ADA93B1EE567E6000AF97A /* EngieStartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA93A1EE567E6000AF97A /* EngieStartDemoUITests.m */; };
 		E9ADA94A1EE57109000AF97A /* NGService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA9491EE57109000AF97A /* NGService.m */; };
 		E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */; };
@@ -74,9 +74,8 @@
 		E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGHomePageViewController.m; path = Home/NGHomePageViewController.m; sourceTree = "<group>"; };
 		E96099F01EE55016007F66DA /* NGRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRoundButton.h; sourceTree = "<group>"; };
 		E96099F11EE55016007F66DA /* NGRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRoundButton.m; sourceTree = "<group>"; };
-		E96099F41EE55AEB007F66DA /* NGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
-		E96099FC1EE56068007F66DA /* NSString+Engie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Engie.h"; sourceTree = "<group>"; };
-		E96099FD1EE56068007F66DA /* NSString+Engie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Engie.m"; sourceTree = "<group>"; };
+		E96099FC1EE56068007F66DA /* NSString+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extended.h"; sourceTree = "<group>"; };
+		E96099FD1EE56068007F66DA /* NSString+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extended.m"; sourceTree = "<group>"; };
 		E96099FF1EE56489007F66DA /* NGServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGServiceTest.m; sourceTree = "<group>"; };
 		E9ADA9381EE567E6000AF97A /* EngieStartDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EngieStartDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9ADA93A1EE567E6000AF97A /* EngieStartDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngieStartDemoUITests.m; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		E9ADA9731EE587D4000AF97A /* NGMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMyAccountViewController.h; sourceTree = "<group>"; };
 		E9ADA9741EE587D4000AF97A /* NGMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMyAccountViewController.m; sourceTree = "<group>"; };
 		E9ADA97A1EE59124000AF97A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		E9ADA97B1EE5A11F000AF97A /* NGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +195,6 @@
 		75F31AF51BC9A36B3C02318A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9ADA9791EE58F81000AF97A /* Other */,
 				E96099EF1EE54D8C007F66DA /* Home */,
 				E9ADA96F1EE5877D000AF97A /* MyAccount */,
 				E9ADA9671EE5867C000AF97A /* SideMenu */,
@@ -208,8 +207,8 @@
 		76D9C661E9798BD9E4D167C7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E96099FC1EE56068007F66DA /* NSString+Engie.h */,
-				E96099FD1EE56068007F66DA /* NSString+Engie.m */,
+				E96099FC1EE56068007F66DA /* NSString+Extended.h */,
+				E96099FD1EE56068007F66DA /* NSString+Extended.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -222,7 +221,6 @@
 				38A38BE3B92B2F74D5BB18A9 /* EngieStartDemo */,
 				EB0A3FF174F6D963B3663D9D /* DemoTest */,
 				E9ADA9391EE567E6000AF97A /* EngieStartDemoUITests */,
-				E9ADA9541EE579CE000AF97A /* DemoTest */,
 				B73C696C1F51B31916755C63 /* Frameworks */,
 				E6F628CD7302CF1BBCD53A3B /* Products */,
 				F289237C2669979E41593F12 /* Pods */,
@@ -264,7 +262,7 @@
 		D6CB0A884957CEEADB4536BD /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				E96099F41EE55AEB007F66DA /* NGMacros.h */,
+				E9ADA97B1EE5A11F000AF97A /* NGMacros.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -316,13 +314,6 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
-		E9ADA9541EE579CE000AF97A /* DemoTest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DemoTest;
-			sourceTree = "<group>";
-		};
 		E9ADA9611EE57FB9000AF97A /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,13 +348,6 @@
 				E9ADA9741EE587D4000AF97A /* NGMyAccountViewController.m */,
 			);
 			path = MyAccount;
-			sourceTree = "<group>";
-		};
-		E9ADA9791EE58F81000AF97A /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 		EB0A3FF174F6D963B3663D9D /* DemoTest */ = {
@@ -670,7 +654,7 @@
 			files = (
 				E9ADA9661EE584AD000AF97A /* NGAppConfig.m in Sources */,
 				E9ADA94A1EE57109000AF97A /* NGService.m in Sources */,
-				E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */,
+				E96099FE1EE56068007F66DA /* NSString+Extended.m in Sources */,
 				CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */,
 				E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */,
 				E9ADA96E1EE58734000AF97A /* NGMenuCell.m in Sources */,

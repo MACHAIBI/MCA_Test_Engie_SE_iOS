@@ -12,7 +12,7 @@
 #import "NGRoundButton.h"
 
 //Category
-#import "NSString+Engie.h"
+#import "NSString+Extended.h"
 
 //Model
 #import "NGUser.h"
@@ -42,29 +42,15 @@
 {
     [super viewDidLoad];
     
-#ifdef DEBUG
-    self.emailTextField.text = @"majid.chaibi@gmail.com";
-#endif
-    
+    [self pushMyContactIfConnected];
     [self observeEmailTextField];
     [self observeCreateAccount];
-
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - Private methods
 
@@ -132,6 +118,21 @@
             [ProgressHUD showError];
         }
     }];
+}
+- (void)pushMyContactIfConnected
+{
+    NGUser * user =[NGAppConfig loadUser];
+    if (user.email != nil)
+    {
+        [[NGUser sharedInstance] setIdUser:user.idUser];
+        [[NGUser sharedInstance] setEmail:user.email];
+        [[NGUser sharedInstance] setName:user.name];
+        [self performSegueWithIdentifier:@"PushMyAccount" sender:self];
+    }
+    else
+    {
+        self.registrationButton.hidden = NO;
+    }
 }
 
 #pragma mark - Alert methods

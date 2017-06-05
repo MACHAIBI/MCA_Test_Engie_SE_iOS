@@ -32,7 +32,7 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testMyApplication{
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
@@ -42,12 +42,11 @@
     XCUIElement *emailRequiredTextField = app.textFields[@"Email (Required)"];
     [emailRequiredTextField tap];
     [emailRequiredTextField typeText:@"majid.chaibi@gmail.com"];
-    
     XCUIElement *nameTextField = app.textFields[@"Name"];
     [nameTextField tap];
     [nameTextField typeText:@"CHAIBI"];
-    [app.buttons[@"Create My Account"] tap];
-    
+    [[[XCUIApplication alloc] init].buttons[@"Create My Account"] tap];
 }
+
 
 @end

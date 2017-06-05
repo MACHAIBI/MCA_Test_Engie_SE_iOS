@@ -14,6 +14,8 @@ NSString *const KUserKey = @"UserKey";
 
 @implementation NGAppConfig
 
+// i used NSUserDefault for TestDemo but it is preferable to use keychain for client
+
 + (void)saveUser:(NGUser*)user
 {
     NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:user];

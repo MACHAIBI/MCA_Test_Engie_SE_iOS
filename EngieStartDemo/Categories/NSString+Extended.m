@@ -6,9 +6,9 @@
 //  Copyright © 2017 Engie. All rights reserved.
 //
 
-#import "NSString+Engie.h"
+#import "NSString+Extended.h"
 
-@implementation NSString (Engie)
+@implementation NSString (Extended)
 
 - (BOOL) isEmail
 {
