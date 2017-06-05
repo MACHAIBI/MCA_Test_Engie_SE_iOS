@@ -125,7 +125,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="registrationAction:" destination="IUC-gZ-WW0" eventType="touchUpInside" id="TdT-Ua-0ib"/>
+                                    <action selector="goToRegistrationView:" destination="IUC-gZ-WW0" eventType="touchUpInside" id="MVZ-fZ-UFy"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="engie_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HYM-9d-aef">

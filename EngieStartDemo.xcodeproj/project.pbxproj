@@ -20,6 +20,8 @@
 		E96099F51EE55C2D007F66DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099F71EE55C2D007F66DA /* Main.storyboard */; };
 		E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FD1EE56068007F66DA /* NSString+Engie.m */; };
 		E9ADA93B1EE567E6000AF97A /* EngieStartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA93A1EE567E6000AF97A /* EngieStartDemoUITests.m */; };
+		E9ADA94A1EE57109000AF97A /* NGService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA9491EE57109000AF97A /* NGService.m */; };
+		E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		E9ADA9421EE56F83000AF97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9ADA9441EE56FB8000AF97A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E9ADA9461EE56FD5000AF97A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		E9ADA9481EE57109000AF97A /* NGService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGService.h; sourceTree = "<group>"; };
+		E9ADA9491EE57109000AF97A /* NGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGService.m; sourceTree = "<group>"; };
+		E9ADA94C1EE5713D000AF97A /* NGService+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGService+Registration.h"; sourceTree = "<group>"; };
+		E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGService+Registration.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 		38A38BE3B92B2F74D5BB18A9 /* EngieStartDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9ADA9471EE570BD000AF97A /* Services */,
 				76D9C661E9798BD9E4D167C7 /* Categories */,
 				D6CB0A884957CEEADB4536BD /* Headers */,
 				FCA0B42B8A9975C217B72F88 /* Models */,
@@ -248,6 +255,25 @@
 				E9ADA93C1EE567E6000AF97A /* Info.plist */,
 			);
 			path = EngieStartDemoUITests;
+			sourceTree = "<group>";
+		};
+		E9ADA9471EE570BD000AF97A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9ADA94B1EE57110000AF97A /* Registration */,
+				E9ADA9481EE57109000AF97A /* NGService.h */,
+				E9ADA9491EE57109000AF97A /* NGService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9ADA94B1EE57110000AF97A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E9ADA94C1EE5713D000AF97A /* NGService+Registration.h */,
+				E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		EB0A3FF174F6D963B3663D9D /* DemoTest */ = {
@@ -471,12 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9ADA94A1EE57109000AF97A /* NGService.m in Sources */,
 				E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */,
 				CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */,
 				E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */,
 				133127FF9B545C46B9C6ADA2 /* main.m in Sources */,
 				E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */,
 				E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */,
+				E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

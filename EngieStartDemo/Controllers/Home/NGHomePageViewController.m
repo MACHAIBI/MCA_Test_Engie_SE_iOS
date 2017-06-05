@@ -14,6 +14,9 @@
 //Category
 #import "NSString+Engie.h"
 
+//Services
+#import "NGService+Registration.h"
+
 //third party
 #import "ReactiveObjC.h"
 
@@ -90,13 +93,30 @@
         
         if ([self.emailTextField.text isEmail])
         {
-            NSLog(@"Pressed button");
+            [self createMyAccount];
         }
         else
         {
             [self emptyFormAlert];
         }
         return [RACSignal empty];
+    }];
+}
+
+- (void)createMyAccount
+{
+    NSDictionary *params = @{@"user":@{ @"email":self.emailTextField.text,
+                                        @"name":self.nameTextField.text}};
+    
+    [NGService registrationWithDictionary:params completionHandler:^(NSError *error, NSDictionary *json){
+        if (!error)
+        {
+            NSLog(@"success");
+        }
+        else
+        {
+            NSLog(@"Error");
+        }
     }];
 }
 
@@ -107,7 +127,7 @@
 }
 
 #pragma mark - IBAction
-- (IBAction)registrationAction:(id)sender
+- (IBAction)goToRegistrationView:(id)sender
 {
     [self displayAccountView:YES];
 }
