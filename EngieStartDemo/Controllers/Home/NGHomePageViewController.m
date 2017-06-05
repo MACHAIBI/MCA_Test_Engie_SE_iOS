@@ -129,10 +129,6 @@
         [[NGUser sharedInstance] setName:user.name];
         [self performSegueWithIdentifier:@"PushMyAccount" sender:self];
     }
-    else
-    {
-        self.registrationButton.hidden = NO;
-    }
 }
 
 #pragma mark - Alert methods
