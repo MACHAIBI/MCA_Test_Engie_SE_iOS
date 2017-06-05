@@ -20,6 +20,7 @@
 		E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */; };
 		E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099F11EE55016007F66DA /* NGRoundButton.m */; };
 		E96099F51EE55C2D007F66DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099F71EE55C2D007F66DA /* Main.storyboard */; };
+		E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FD1EE56068007F66DA /* NSString+Engie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		E96099F41EE55AEB007F66DA /* NGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
 		E96099F61EE55C2D007F66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E96099F81EE55C2E007F66DA /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E96099FC1EE56068007F66DA /* NSString+Engie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Engie.h"; sourceTree = "<group>"; };
+		E96099FD1EE56068007F66DA /* NSString+Engie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Engie.m"; sourceTree = "<group>"; };
 		EDC3BEE6847C19610D081477 /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +160,8 @@
 		76D9C661E9798BD9E4D167C7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				E96099FC1EE56068007F66DA /* NSString+Engie.h */,
+				E96099FD1EE56068007F66DA /* NSString+Engie.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96099FE1EE56068007F66DA /* NSString+Engie.m in Sources */,
 				CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */,
 				E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */,
 				133127FF9B545C46B9C6ADA2 /* main.m in Sources */,
