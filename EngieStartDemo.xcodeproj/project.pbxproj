@@ -19,6 +19,7 @@
 		E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */; };
 		E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099EA1EE54D59007F66DA /* NGBaseViewController.m */; };
 		E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */; };
+		E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099F11EE55016007F66DA /* NGRoundButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		E96099EA1EE54D59007F66DA /* NGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGBaseViewController.m; sourceTree = "<group>"; };
 		E96099EC1EE54D85007F66DA /* NGHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGHomePageViewController.h; path = Home/NGHomePageViewController.h; sourceTree = "<group>"; };
 		E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGHomePageViewController.m; path = Home/NGHomePageViewController.m; sourceTree = "<group>"; };
+		E96099F01EE55016007F66DA /* NGRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRoundButton.h; sourceTree = "<group>"; };
+		E96099F11EE55016007F66DA /* NGRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRoundButton.m; sourceTree = "<group>"; };
 		EC85246B7D123D83D6283567 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EDC3BEE6847C19610D081477 /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +87,8 @@
 		1C40438BA19D662ED0F61A4A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E96099F01EE55016007F66DA /* NGRoundButton.h */,
+				E96099F11EE55016007F66DA /* NGRoundButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */,
 				133127FF9B545C46B9C6ADA2 /* main.m in Sources */,
 				E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */,
+				E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

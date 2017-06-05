@@ -8,9 +8,12 @@
 
 #import "NGHomePageViewController.h"
 
+// Views
+#import "NGRoundButton.h"
+
 @interface NGHomePageViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *registrationButton;
+@property (weak, nonatomic) IBOutlet NGRoundButton *registrationButton;
 
 @end
 

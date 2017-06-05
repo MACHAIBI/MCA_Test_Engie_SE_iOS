@@ -63,7 +63,7 @@
                                     </constraint>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Hc-z0s">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Hc-z0s" customClass="NGRoundButton">
                                 <rect key="frame" x="26" y="305.5" width="323" height="56"/>
                                 <color key="backgroundColor" red="0.99895304439999999" green="0.16319701079999999" blue="0.53923797610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
