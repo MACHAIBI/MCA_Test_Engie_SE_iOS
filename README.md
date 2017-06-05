@@ -17,7 +17,7 @@ SWRevealViewController (SideMenu), WKRequest (Web services).
 
 > Maintenant que tu as eu un peu de temps pour observer Smart Energie, as-tu des idées d'améliorations de la version actuellement en production (UI, UX) ?
 
-- le design a revoir sur la version iPad, avec les bouton moins étiré, un side menu plus adapté.
+- le design a revoir sur la version iPad, avec les boutons moins étirés, un side menu plus adapté.
 
 - lors du clique sur le détail conso dans la page d'accueil, on est redirigé brutalement vers la section Astuces conso, alors que je verrais plus un push avec un bouton retour.
 
@@ -32,6 +32,4 @@ SWRevealViewController (SideMenu), WKRequest (Web services).
 - Désactiver la selection sur les élements dans Matériel.
 
 Cordialement,
-
-
 
