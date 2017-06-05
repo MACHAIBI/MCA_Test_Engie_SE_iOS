@@ -127,16 +127,25 @@
         }
         else
         {
-            NSLog(@"Error");
+            [self errorAlert:error];
             [ProgressHUD showError];
         }
     }];
 }
 
+#pragma mark - Alert methods
+
 - (void)emptyFormAlert
 {
     [self cancelAlertWithTitle:_T(@"NG_Registration_Form_Incomplete.title")
                        message:_T(@"NG_Registration_Form_Incomplete.message")];
+}
+
+- (void)errorAlert:(NSError*)error
+{
+    NSString *message = [NSString stringWithFormat:@"%ld - %@",(long)error.code,error.userInfo];
+    [self cancelAlertWithTitle:_T(@"NG_Global_Error")
+                       message:message];
 }
 
 #pragma mark - IBAction
