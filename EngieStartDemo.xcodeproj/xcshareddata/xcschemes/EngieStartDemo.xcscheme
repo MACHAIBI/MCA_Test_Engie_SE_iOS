@@ -38,6 +38,16 @@
                ReferencedContainer = "container:EngieStartDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9ADA9371EE567E6000AF97A"
+               BuildableName = "EngieStartDemoUITests.xctest"
+               BlueprintName = "EngieStartDemoUITests"
+               ReferencedContainer = "container:EngieStartDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
