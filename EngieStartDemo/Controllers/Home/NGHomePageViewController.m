@@ -14,6 +14,8 @@
 @interface NGHomePageViewController ()
 
 @property (weak, nonatomic) IBOutlet NGRoundButton *registrationButton;
+@property (weak, nonatomic) IBOutlet NGRoundButton *createAccountButton;
+@property (weak, nonatomic) IBOutlet UIView        *creatAccountView;
 
 @end
 
@@ -38,5 +40,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Private methods
+
+- (void)displayAccountView:(BOOL)display
+{
+    [UIView transitionWithView:self.creatAccountView
+                      duration:0.6
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        self.creatAccountView.hidden = !display;
+                        self.registrationButton.hidden = display;
+                    }
+                    completion:NULL];
+}
+
+#pragma mark - IBAction
+- (IBAction)registrationAction:(id)sender
+{
+    [self displayAccountView:YES];
+}
+
+- (IBAction)backToRegistration:(id)sender
+{
+    [self displayAccountView:NO];
+}
+
 
 @end
