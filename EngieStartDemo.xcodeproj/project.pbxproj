@@ -10,6 +10,7 @@
 		133127FF9B545C46B9C6ADA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A8A069B8EE309D65A5BD /* main.m */; };
 		2FD02C258E0D55DB4C81328D /* libPods-EngieStartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0168514C63561BF5E02CC98C /* libPods-EngieStartDemo.a */; };
 		8E27A198CFDD6A5ACA56C533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FBE1664FA8797D484B069D /* Foundation.framework */; };
+		B1D22C14BFA6E1FE4CFC6AB3 /* libPods-DemoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E4AA75BE8BC1051396548 /* libPods-DemoTest.a */; };
 		C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33E5B284FB63B1A39593A76 /* Images.xcassets */; };
 		CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */; };
 		E96099E31EE54961007F66DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96099E51EE54961007F66DA /* Localizable.strings */; };
@@ -22,10 +23,18 @@
 		E9ADA93B1EE567E6000AF97A /* EngieStartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA93A1EE567E6000AF97A /* EngieStartDemoUITests.m */; };
 		E9ADA94A1EE57109000AF97A /* NGService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA9491EE57109000AF97A /* NGService.m */; };
 		E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */; };
+		E9ADA95D1EE57A75000AF97A /* NGServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FF1EE56489007F66DA /* NGServiceTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E9ADA93D1EE567E6000AF97A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28FA29A14F0F54D09AF63A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97EBEA423B632F37713F387;
+			remoteInfo = EngieStartDemo;
+		};
+		E9ADA9581EE579CE000AF97A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28FA29A14F0F54D09AF63A95 /* Project object */;
 			proxyType = 1;
@@ -45,7 +54,6 @@
 		68FBE1664FA8797D484B069D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		761AC9809FC4B1F924C397EB /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7A0E4AA75BE8BC1051396548 /* libPods-DemoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		811F9F34DE5147ECA83CEA42 /* DemoTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DemoTest-Info.plist"; sourceTree = "<group>"; };
 		815125B68726F463493C0728 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC94D24EE5530FF9580FDA3 /* Pods-EngieStartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngieStartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EngieStartDemo/Pods-EngieStartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9BCDB3DF73283AF3B53324CF /* Pods-DemoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest/Pods-DemoTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +83,8 @@
 		E9ADA9491EE57109000AF97A /* NGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGService.m; sourceTree = "<group>"; };
 		E9ADA94C1EE5713D000AF97A /* NGService+Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGService+Registration.h"; sourceTree = "<group>"; };
 		E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGService+Registration.m"; sourceTree = "<group>"; };
+		E9ADA9531EE579CE000AF97A /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9ADA9571EE579CE000AF97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9ADA9501EE579CE000AF97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D22C14BFA6E1FE4CFC6AB3 /* libPods-DemoTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +161,7 @@
 		51224F58AF1E5D5BE5DB127E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				811F9F34DE5147ECA83CEA42 /* DemoTest-Info.plist */,
+				E9ADA9571EE579CE000AF97A /* Info.plist */,
 				237B5009B49E53ED894518FD /* DemoTest-Prefix.pch */,
 			);
 			path = Resources;
@@ -184,6 +202,7 @@
 				38A38BE3B92B2F74D5BB18A9 /* EngieStartDemo */,
 				EB0A3FF174F6D963B3663D9D /* DemoTest */,
 				E9ADA9391EE567E6000AF97A /* EngieStartDemoUITests */,
+				E9ADA9541EE579CE000AF97A /* DemoTest */,
 				B73C696C1F51B31916755C63 /* Frameworks */,
 				E6F628CD7302CF1BBCD53A3B /* Products */,
 				F289237C2669979E41593F12 /* Pods */,
@@ -235,6 +254,7 @@
 			children = (
 				E3CBC6B3E1523806D0BC1B2D /* EngieStartDemo.app */,
 				E9ADA9381EE567E6000AF97A /* EngieStartDemoUITests.xctest */,
+				E9ADA9531EE579CE000AF97A /* DemoTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +294,13 @@
 				E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		E9ADA9541EE579CE000AF97A /* DemoTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DemoTest;
 			sourceTree = "<group>";
 		};
 		EB0A3FF174F6D963B3663D9D /* DemoTest */ = {
@@ -332,6 +359,27 @@
 			productReference = E9ADA9381EE567E6000AF97A /* EngieStartDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E9ADA9521EE579CE000AF97A /* DemoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9ADA95A1EE579CE000AF97A /* Build configuration list for PBXNativeTarget "DemoTest" */;
+			buildPhases = (
+				8EF0C6EB3AE3794F6CC8E073 /* [CP] Check Pods Manifest.lock */,
+				E9ADA94F1EE579CE000AF97A /* Sources */,
+				E9ADA9501EE579CE000AF97A /* Frameworks */,
+				E9ADA9511EE579CE000AF97A /* Resources */,
+				3D4953EF7E04540932D10746 /* [CP] Embed Pods Frameworks */,
+				355E7649BE61F2D15344FD83 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9ADA9591EE579CE000AF97A /* PBXTargetDependency */,
+			);
+			name = DemoTest;
+			productName = DemoTest;
+			productReference = E9ADA9531EE579CE000AF97A /* DemoTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F97EBEA423B632F37713F387 /* EngieStartDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89BB4EA808C42E6FCC1F611C /* Build configuration list for PBXNativeTarget "EngieStartDemo" */;
@@ -370,6 +418,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = F97EBEA423B632F37713F387;
 					};
+					E9ADA9521EE579CE000AF97A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F97EBEA423B632F37713F387;
+					};
 					F97EBEA423B632F37713F387 = {
 						DevelopmentTeam = 52X7HEPCQJ;
 					};
@@ -391,12 +444,20 @@
 			targets = (
 				F97EBEA423B632F37713F387 /* EngieStartDemo */,
 				E9ADA9371EE567E6000AF97A /* EngieStartDemoUITests */,
+				E9ADA9521EE579CE000AF97A /* DemoTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9ADA9361EE567E6000AF97A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9ADA9511EE579CE000AF97A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,6 +493,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EngieStartDemo/Pods-EngieStartDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		355E7649BE61F2D15344FD83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoTest/Pods-DemoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4953EF7E04540932D10746 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoTest/Pods-DemoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		58649B30EC0CF70373C5E241 /* Warn for TODO and FIXME comments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +538,21 @@
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/Carthage\" -o -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
 		8C148415C14C1BDCE41BB6E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF0C6EB3AE3794F6CC8E073 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,6 +622,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9ADA94F1EE579CE000AF97A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9ADA95D1EE57A75000AF97A /* NGServiceTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -523,6 +637,11 @@
 			isa = PBXTargetDependency;
 			target = F97EBEA423B632F37713F387 /* EngieStartDemo */;
 			targetProxy = E9ADA93D1EE567E6000AF97A /* PBXContainerItemProxy */;
+		};
+		E9ADA9591EE579CE000AF97A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F97EBEA423B632F37713F387 /* EngieStartDemo */;
+			targetProxy = E9ADA9581EE579CE000AF97A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -744,6 +863,62 @@
 			};
 			name = Release;
 		};
+		E9ADA95B1EE579CE000AF97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68313DEA40F19F258BB8CB40 /* Pods-DemoTest.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DemoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = univ.paris8.CHAIBI.DemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EngieStartDemo.app/EngieStartDemo";
+			};
+			name = Debug;
+		};
+		E9ADA95C1EE579CE000AF97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BCDB3DF73283AF3B53324CF /* Pods-DemoTest.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DemoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = univ.paris8.CHAIBI.DemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EngieStartDemo.app/EngieStartDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -772,6 +947,16 @@
 				E9ADA9401EE567E6000AF97A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9ADA95A1EE579CE000AF97A /* Build configuration list for PBXNativeTarget "DemoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9ADA95B1EE579CE000AF97A /* Debug */,
+				E9ADA95C1EE579CE000AF97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

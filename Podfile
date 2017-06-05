@@ -6,11 +6,10 @@ target 'EngieStartDemo' do
 
 pod 'WKRequest'
 pod 'ReactiveObjC'
-
+pod 'ProgressHUD'
 end
 
 target 'DemoTest' do
 
 pod 'WKRequest'
-
 end

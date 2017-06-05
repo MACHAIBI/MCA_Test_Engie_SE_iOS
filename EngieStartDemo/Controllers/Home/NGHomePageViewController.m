@@ -19,6 +19,7 @@
 
 //third party
 #import "ReactiveObjC.h"
+#import "ProgressHUD.h"
 
 @interface NGHomePageViewController ()
 
@@ -37,6 +38,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+#ifdef DEBUG
+    self.emailTextField.text = @"majid.chaibi@gmail.com";
+#endif
+    
     [self observeEmailTextField];
     [self observeCreateAccount];
 
@@ -105,6 +111,8 @@
 
 - (void)createMyAccount
 {
+    [ProgressHUD show];
+    
     NSDictionary *params = @{@"user":@{ @"email":self.emailTextField.text,
                                         @"name":self.nameTextField.text}};
     
@@ -112,10 +120,12 @@
         if (!error)
         {
             NSLog(@"success");
+            [ProgressHUD showSuccess];
         }
         else
         {
             NSLog(@"Error");
+            [ProgressHUD showError];
         }
     }];
 }
