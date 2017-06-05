@@ -15,9 +15,10 @@
 		BA685C047BFDE2932829688D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85246B7D123D83D6283567 /* Main.storyboard */; };
 		C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33E5B284FB63B1A39593A76 /* Images.xcassets */; };
 		CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */; };
-		E96099E01EE54366007F66DA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E96099DF1EE54366007F66DA /* Podfile */; };
 		E96099E31EE54961007F66DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96099E51EE54961007F66DA /* Localizable.strings */; };
 		E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */; };
+		E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099EA1EE54D59007F66DA /* NGBaseViewController.m */; };
+		E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +33,9 @@
 
 /* Begin PBXFileReference section */
 		0168514C63561BF5E02CC98C /* libPods-EngieStartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EngieStartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0768AF0BF9A732DFD94148D0 /* NGAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NGAppDelegate.h; sourceTree = "<group>"; };
+		0768AF0BF9A732DFD94148D0 /* NGAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NGAppDelegate.h; path = EngieStartDemo/Controllers/NGAppDelegate.h; sourceTree = "<group>"; };
 		0CE0A8A069B8EE309D65A5BD /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegate.m; sourceTree = "<group>"; };
+		1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NGAppDelegate.m; path = EngieStartDemo/Controllers/NGAppDelegate.m; sourceTree = "<group>"; };
 		237B5009B49E53ED894518FD /* DemoTest-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DemoTest-Prefix.pch"; sourceTree = "<group>"; };
 		4DA00D4509787588CF8B7334 /* Pods-EngieStartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngieStartDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EngieStartDemo/Pods-EngieStartDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		68313DEA40F19F258BB8CB40 /* Pods-DemoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest/Pods-DemoTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,10 +49,13 @@
 		A17BE631B09E9548885E672A /* EngieStartDemo-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EngieStartDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A33E5B284FB63B1A39593A76 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E3CBC6B3E1523806D0BC1B2D /* EngieStartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngieStartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E96099DF1EE54366007F66DA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E96099E41EE54961007F66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E96099E61EE54986007F66DA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E96099E91EE54D59007F66DA /* NGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGBaseViewController.h; sourceTree = "<group>"; };
+		E96099EA1EE54D59007F66DA /* NGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGBaseViewController.m; sourceTree = "<group>"; };
+		E96099EC1EE54D85007F66DA /* NGHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGHomePageViewController.h; path = Home/NGHomePageViewController.h; sourceTree = "<group>"; };
+		E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGHomePageViewController.m; path = Home/NGHomePageViewController.m; sourceTree = "<group>"; };
 		EC85246B7D123D83D6283567 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EDC3BEE6847C19610D081477 /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,8 +140,9 @@
 		75F31AF51BC9A36B3C02318A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0768AF0BF9A732DFD94148D0 /* NGAppDelegate.h */,
-				1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */,
+				E96099E91EE54D59007F66DA /* NGBaseViewController.h */,
+				E96099EA1EE54D59007F66DA /* NGBaseViewController.m */,
+				E96099EF1EE54D8C007F66DA /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -152,7 +157,8 @@
 		8FC76EA3B47962B8645A4724 = {
 			isa = PBXGroup;
 			children = (
-				E96099DF1EE54366007F66DA /* Podfile */,
+				0768AF0BF9A732DFD94148D0 /* NGAppDelegate.h */,
+				1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */,
 				38A38BE3B92B2F74D5BB18A9 /* EngieStartDemo */,
 				EB0A3FF174F6D963B3663D9D /* DemoTest */,
 				B73C696C1F51B31916755C63 /* Frameworks */,
@@ -207,6 +213,15 @@
 				EDC3BEE6847C19610D081477 /* DemoTest.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E96099EF1EE54D8C007F66DA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E96099EC1EE54D85007F66DA /* NGHomePageViewController.h */,
+				E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		EB0A3FF174F6D963B3663D9D /* DemoTest */ = {
@@ -342,7 +357,6 @@
 				C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */,
 				BA685C047BFDE2932829688D /* Main.storyboard in Resources */,
 				E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */,
-				E96099E01EE54366007F66DA /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +496,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */,
+				E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */,
 				133127FF9B545C46B9C6ADA2 /* main.m in Sources */,
+				E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
