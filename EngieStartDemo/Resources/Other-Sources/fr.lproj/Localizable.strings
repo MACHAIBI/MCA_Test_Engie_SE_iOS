@@ -24,3 +24,27 @@
 
 "NG_Registration_Form_Incomplete.title" = "Formulaire Incomplet";
 "NG_Registration_Form_Incomplete.message" = "L'email est obligatoire, Veuillez le renseigner";
+
+/*********************************************
+ * MARK: -  Menu
+ *********************************************/
+
+"NG_Home_Menu_Title"                        = "MENU";
+
+"NG_Home_Menu_Disconnection_Title"          = "Déconnexion";
+"NG_Home_Menu_Disconnection_Message"        = "Etes vous sure de vouloir vous déconnecter";
+
+"NG_Home_Menu_MyAccount.title"   = "Mon compte";
+"NG_Home_Menu_Comsumption.title" = "Ma consomation";
+"NG_Home_Menu_History.title"     = "Mon historique";
+"NG_Home_Menu_History.trick"     = "Astuces";
+"NG_Home_Menu_History.quality"   = "Quality du logement";
+
+
+/*********************************************
+ * MARK: -  MyAccount
+ *********************************************/
+
+"NG_MyAccount.id"    = "ID Utilisateur";
+"NG_MyAccount.email" = "Email";
+"NG_MyAccount.name"  = "Nom";

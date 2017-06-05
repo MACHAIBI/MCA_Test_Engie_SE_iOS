@@ -124,6 +124,7 @@
         {
             [NGAppConfig saveUser:user];
             [ProgressHUD showSuccess];
+            [self performSegueWithIdentifier:@"PushMyAccount" sender:self];
         }
         else
         {

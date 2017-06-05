@@ -24,3 +24,28 @@
 
 "NG_Registration_Form_Incomplete.title" = "Incomplete Form";
 "NG_Registration_Form_Incomplete.message" = "Email is required, please fill in";
+
+/*********************************************
+ * MARK: -  Menu
+ *********************************************/
+
+"NG_Home_Menu_Title"                        = "MENU";
+"NG_Home_Menu_Disconnection_Title"          = "Disconnection";
+"NG_Home_Menu_Disconnection_Message"        = "Are you sure you want to sign out ?";
+
+"NG_Home_Menu_MyAccount.title"   = "My Account";
+"NG_Home_Menu_Comsumption.title" = "My consumption";
+"NG_Home_Menu_History.title"     = "My History";
+"NG_Home_Menu_History.trick"     = "Tricks";
+"NG_Home_Menu_History.quality"   = "Home Quality";
+
+/*********************************************
+ * MARK: -  MyAccount
+ *********************************************/
+
+"NG_MyAccount.id"    = "User ID";
+"NG_MyAccount.email" = "Email";
+"NG_MyAccount.name"  = "Name";
+
+
+

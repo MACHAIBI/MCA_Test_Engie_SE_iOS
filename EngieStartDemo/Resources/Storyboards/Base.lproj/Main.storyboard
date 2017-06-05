@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -160,14 +161,322 @@
                         <outlet property="emailTextField" destination="Bxy-v5-ikP" id="xkP-zn-zsK"/>
                         <outlet property="nameTextField" destination="grI-mD-kjz" id="ABc-RC-REe"/>
                         <outlet property="registrationButton" destination="3JM-Hc-z0s" id="9Qh-Bz-poD"/>
+                        <segue destination="Tdd-3F-eCZ" kind="show" identifier="PushMyAccount" id="uOt-bp-squ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Btr-F6-4RY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1084" y="-36"/>
         </scene>
+        <!--SWReveal View Controller-->
+        <scene sceneID="74o-MW-kUv">
+            <objects>
+                <viewController id="Tdd-3F-eCZ" userLabel="SWReveal View Controller" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0YM-LA-I1a"/>
+                        <viewControllerLayoutGuide type="bottom" id="UH6-4j-3f7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yBi-k2-XVW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TxB-mt-b6E"/>
+                    <connections>
+                        <segue destination="GMA-9d-mPL" kind="show" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="IS0-S5-3yd"/>
+                        <segue destination="XpV-Yf-fIu" kind="show" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="kV9-ej-Opu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdA-ng-bhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="-36"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="rGq-mf-t1h">
+            <objects>
+                <viewController id="GMA-9d-mPL" customClass="NGSideMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9OH-gF-bkg"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKq-5q-juj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0C4-Ja-14g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="71" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-wW-M42">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <color key="backgroundColor" red="0.9370916485786438" green="0.93694382905960083" blue="0.95754462480545044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellMenu" rowHeight="70" id="hym-Sw-Ckj" customClass="NGMenuCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hym-Sw-Ckj" id="VKm-nq-fTH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygy-aK-bgv">
+                                                    <rect key="frame" x="23" y="18" width="38" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="YXC-rn-qKk"/>
+                                                        <constraint firstAttribute="height" constant="33" id="rye-FF-cHR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl9-uR-6V5">
+                                                    <rect key="frame" x="87" y="24" width="274" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="5Kc-YN-dOo"/>
+                                                        <constraint firstAttribute="width" constant="274" id="WjY-bU-KJN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <color key="highlightedColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hl9-uR-6V5" firstAttribute="leading" secondItem="ygy-aK-bgv" secondAttribute="trailing" constant="26" id="MAt-xu-tcc"/>
+                                                <constraint firstItem="ygy-aK-bgv" firstAttribute="leading" secondItem="VKm-nq-fTH" secondAttribute="leadingMargin" constant="15" id="Mbl-WT-Cdl"/>
+                                                <constraint firstItem="ygy-aK-bgv" firstAttribute="centerY" secondItem="Hl9-uR-6V5" secondAttribute="centerY" id="PfQ-Ql-DdG"/>
+                                                <constraint firstItem="Hl9-uR-6V5" firstAttribute="centerY" secondItem="VKm-nq-fTH" secondAttribute="centerY" id="mGq-vH-Ton"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="imageViewCell" destination="ygy-aK-bgv" id="fWh-dg-cNo"/>
+                                            <outlet property="titleLabel" destination="Hl9-uR-6V5" id="fjt-vj-rqd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GMA-9d-mPL" id="zlk-i5-jVm"/>
+                                    <outlet property="delegate" destination="GMA-9d-mPL" id="e5P-Q1-7Kb"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdH-3Q-47k" customClass="NGRoundButton">
+                                <rect key="frame" x="23" y="591" width="246" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Vzl-UD-qOS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Disconnection">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnection:" destination="GMA-9d-mPL" eventType="touchUpInside" id="caw-oO-Dgs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tHz-wW-M42" secondAttribute="trailing" id="OZt-lN-qkh"/>
+                            <constraint firstItem="sdH-3Q-47k" firstAttribute="top" secondItem="tHz-wW-M42" secondAttribute="bottom" constant="24" id="PpN-vk-GBQ"/>
+                            <constraint firstItem="sdH-3Q-47k" firstAttribute="leading" secondItem="0C4-Ja-14g" secondAttribute="leadingMargin" constant="7" id="cW5-8S-YIb"/>
+                            <constraint firstItem="tHz-wW-M42" firstAttribute="leading" secondItem="0C4-Ja-14g" secondAttribute="leading" id="equ-lU-QjX"/>
+                            <constraint firstItem="RKq-5q-juj" firstAttribute="top" secondItem="sdH-3Q-47k" secondAttribute="bottom" constant="24" id="jj1-9C-DHg"/>
+                            <constraint firstItem="tHz-wW-M42" firstAttribute="top" secondItem="0C4-Ja-14g" secondAttribute="top" id="mNW-4R-qro"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sdH-3Q-47k" secondAttribute="trailing" constant="90" id="whk-4V-fz7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuTableView" destination="tHz-wW-M42" id="mpa-Ke-utz"/>
+                        <segue destination="rPd-h0-t4i" kind="show" identifier="PushMyAccount" customClass="SWRevealViewControllerSeguePushController" id="uiK-T7-EEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPV-zt-5gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="751.57421289355329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JHe-uo-mrz">
+            <objects>
+                <navigationController id="XpV-Yf-fIu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ySN-jP-ITJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jdt-5X-B2Z" kind="relationship" relationship="rootViewController" id="ZVP-GX-qBq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e14-Ql-K0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="-36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vGN-4q-vVm">
+            <objects>
+                <navigationController id="rPd-h0-t4i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K9g-Yx-m3m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jdt-5X-B2Z" kind="relationship" relationship="rootViewController" id="yYf-XV-6TV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwo-Ws-89T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="752"/>
+        </scene>
+        <!--MyAccount-->
+        <scene sceneID="6tw-9M-2oG">
+            <objects>
+                <viewController id="jdt-5X-B2Z" customClass="NGMyAccountViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bNU-Io-2lb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xQG-W5-t5Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RjI-FL-K3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpv-nB-Sgf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="W5R-kK-JLL">
+                                        <barButtonItem key="leftBarButtonItem" image="barButtonItem:frN-Bv-kZI:image" id="frN-Bv-kZI"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-Q6-8Ww">
+                                <rect key="frame" x="37.5" y="104" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="uHb-rW-R01"/>
+                                    <constraint firstAttribute="height" constant="50" id="ud2-dF-lVh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dst-ui-9LG">
+                                <rect key="frame" x="37.5" y="193" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3jE-rn-Nay"/>
+                                    <constraint firstAttribute="height" constant="50" id="UDA-x1-efb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="YEt-zV-44z">
+                                <rect key="frame" x="37.5" y="148" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="B2g-vN-Mdx"/>
+                                    <constraint firstAttribute="height" constant="50" id="U80-Bp-VlM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94853255110000001" green="0.94887278860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PcG-Q6-8Ww" firstAttribute="top" secondItem="bNU-Io-2lb" secondAttribute="bottom" constant="40" id="2lT-XE-I4C"/>
+                            <constraint firstItem="YEt-zV-44z" firstAttribute="top" secondItem="bNU-Io-2lb" secondAttribute="bottom" constant="84" id="BXq-eI-cIN"/>
+                            <constraint firstItem="dst-ui-9LG" firstAttribute="top" secondItem="PcG-Q6-8Ww" secondAttribute="bottom" constant="39" id="Ggg-UA-6qG"/>
+                            <constraint firstItem="xpv-nB-Sgf" firstAttribute="leading" secondItem="RjI-FL-K3q" secondAttribute="leading" id="MkX-mR-x8N"/>
+                            <constraint firstItem="dst-ui-9LG" firstAttribute="centerX" secondItem="RjI-FL-K3q" secondAttribute="centerX" id="UdR-md-1iH"/>
+                            <constraint firstItem="PcG-Q6-8Ww" firstAttribute="centerX" secondItem="RjI-FL-K3q" secondAttribute="centerX" id="c7r-ga-rtu"/>
+                            <constraint firstItem="YEt-zV-44z" firstAttribute="leading" secondItem="PcG-Q6-8Ww" secondAttribute="leading" id="eTF-tn-21F"/>
+                            <constraint firstItem="xpv-nB-Sgf" firstAttribute="top" secondItem="RjI-FL-K3q" secondAttribute="top" id="wCA-w6-NhW"/>
+                            <constraint firstItem="YEt-zV-44z" firstAttribute="centerX" secondItem="xpv-nB-Sgf" secondAttribute="centerX" id="wp8-A0-QI4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MyAccount" id="CNX-S1-cS3">
+                        <barButtonItem key="leftBarButtonItem" tag="1" image="menu_icon" id="hco-GO-qdE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="NameUserLabel" destination="dst-ui-9LG" id="sXy-QM-SaQ"/>
+                        <outlet property="emailUserLabel" destination="YEt-zV-44z" id="QNa-tB-1De"/>
+                        <outlet property="idUserLabel" destination="PcG-Q6-8Ww" id="Ovh-Rz-Obr"/>
+                        <outlet property="navTitle" destination="CNX-S1-cS3" id="3BC-hn-vnh"/>
+                        <outlet property="revealButtonItem" destination="hco-GO-qdE" id="Idg-pf-vbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QN-xH-qWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="334"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="barButtonItem:frN-Bv-kZI:image" width="20" height="20">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7MjAsIDIwfdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPEQ7eTU0AKgAABkgAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAA
+BAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAACQoKqwsNDdUMDQ3TDA0N0wwNDdMMDQ3TDA0N
+0wwNDdMMDQ3TDA0N0wwNDdMMDQ3TDA0N0wwNDdMMDQ3TDA0N0wwNDdMMDQ3TCw0N1QkKCqsEBARLBQYG
+ZgUGBmUFBgZlBQYGZQUGBmUFBgZlBQYGZQUGBmUFBgZlBQYGZQUGBmUFBgZlBQYGZQUGBmUFBgZlBQYG
+ZQUGBmUFBgZmBAQESgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBwd/CQkJ
+ogoKCqEKCgqhCgoKoQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoK
+oQoKCqEJCQmiBgcHfgYHB34JCQmiCgoKoQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoK
+oQoKCqEKCgqhCgoKoQoKCqEKCgqhCgoKoQkJCaIGBwd+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAzIFBgZnBQYGZQUGBmUFBgZlBQYG
+ZQUGBmUFBgZlBQYGZQUGBmUFBgZlBQYGZQUGBmYEBARLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgYG
+cA0NDdYMDQ3TDA0N0wwNDdMMDQ3TDA0N0wwNDdMMDQ3TDA0N0wwNDdMMDQ3TCw0N1QkKCqsAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAA
+BAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4BAAADAAAAAQAUAAABAQADAAAAAQAUAAAB
+AgADAAAABAAABvYBAwADAAAAAQABAAABBgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAAB
+FQADAAAAAQAEAAABFgADAAAAAQAUAAABFwAEAAAAAQAABkABHAADAAAAAQABAAABUgADAAAAAQABAAAB
+UwADAAAABAAABv6HcwAHAAAH2AAABwYAAAAAAAgACAAIAAgAAQABAAEAAQAAB9hhcHBsAiAAAG1udHJS
+R0IgWFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAA
+ANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MA
+AAEIAAAAb2RzY20AAAF4AAAFnGNwcnQAAAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoA
+AAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMAAAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMA
+AAecAAAADmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJH
+QiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt
+bHVjAAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQA
+AAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYA
+AALCbmJOTwAAACYAAALYY3NDWgAAACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQA
+AANmZGVERQAAACwAAAOKa29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoA
+AAPiZWxHUgAAACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQA
+AARsdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIA
+AAUuYXJFRwAAACYAAAVQZW5VUwAAACYAAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIA
+bwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIA
+ZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgA
+dQBuAGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgE
+OQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAA
+UgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCC
+cl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAA
+UgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkA
+bABvACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUA
+cgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcA
+QgAg1QS4XNMMx3xmbpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsD
+kwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+bgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO
+Hw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwA
+aQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkA
+IABSAEcAQgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAA
+UgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAA
+UgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQA
+AAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAA
+APNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAA
+ACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L/
+//2jAAAD3AAAwGzSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpa
+TlNJbWFnZVJlcFhOU09iamVjdNIlJiwtV05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrT
+MjMKNDU2V05TV2hpdGVcTlNDb2xvclNwYWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05T
+SW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBl
+AHIAeQCBAIMAhQCKAIwAjgCXAJwApwCpAKsArQCyALUAtwC5ALsAvQDCANkA2wDdD78PxA/PD9gP6w/v
+D/oQAxAIEBAQExAYECcQKxAyEDoQRxBMEE4QUBBVEF0QYBBlEG0QcBCCEIUQigAAAAAAAAIBAAAAAAAA
+AEEAAAAAAAAAAAAAAAAAABCMA
+</mutableData>
+        </image>
         <image name="button:cNi-aR-Yhs:backgroundImage" width="293" height="74">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
@@ -1670,5 +1979,9 @@ AABBAAAAAAAAAAAAAAAAAAFdFw
         <image name="engie_logo" width="650" height="325"/>
         <image name="homeBackground" width="828" height="1351"/>
         <image name="ico_ios_back" width="8" height="18"/>
+        <image name="menu_icon" width="20" height="20"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZVP-GX-qBq"/>
+    </inferredMetricsTieBreakers>
 </document>
