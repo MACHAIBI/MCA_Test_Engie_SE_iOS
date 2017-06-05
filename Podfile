@@ -6,7 +6,7 @@ target 'EngieStartDemo' do
 
 pod 'WKRequest'
 pod 'ReactiveObjC'
-pod 'SWRevealViewController'
+pod 'SWRevealViewController', :inhibit_warnings => true
 pod 'ProgressHUD'
 
 end

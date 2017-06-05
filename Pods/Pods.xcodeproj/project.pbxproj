@@ -45,8 +45,8 @@
 		2A8DF2B6D0421106C66CD60FF8604E6F /* RACSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE73477F9510EBF207F01F9F9F995FF /* RACSubscriptingAssignmentTrampoline.m */; };
 		2FA645D4E6D82B0F33A38612E89A75C2 /* UIGestureRecognizer+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E2305164E81BE1227E3989F5DDDB80EA /* UIGestureRecognizer+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30A701FF3F2A92D3E5BA51C318CC8C56 /* RACErrorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C2163DF17026808472FB2C2DA6C434 /* RACErrorSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31EBEDF10F8F248AED7608EB8FAE0CF4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032575E2BE8AE418248B986A30963BE5 /* SWRevealViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3259DFC79CCEA82185332FC494B02B8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
-		3344C97F4E4505B09C67C2587C4404AC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032575E2BE8AE418248B986A30963BE5 /* SWRevealViewController.m */; };
 		33C3746CBC82ADD889F1ABC4AD611CE9 /* RACScopedDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A551C2F9A5B49D9D02354D9240C1334 /* RACScopedDisposable.m */; };
 		33C4D0EC2EDE39DE6BC42C7464C9CD6C /* NSData+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1B61A0E101421F78BC616874F3096B /* NSData+RACSupport.m */; };
 		356CBF444D809AAB5BB85EA6C628A113 /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A7D9154BC1A065544AD6A393C9D930 /* RACStream.m */; };
@@ -110,6 +110,7 @@
 		76936912124CABF93F7FBA42DB94622C /* NSURLConnection+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B6373492AE5A5211DAFC901B67DAD853 /* NSURLConnection+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7806EC6BA2A938005C25DEBD80527DD1 /* RACMulticastConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0515F0640ADED7C3B041ECA50816E4 /* RACMulticastConnection+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		78310B59BFE485BD45EE89AC7CAA75E8 /* UIImagePickerController+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE13D576109EF3AAD10B34849F94EC /* UIImagePickerController+RACSignalSupport.m */; };
+		787B2A0C78DFF660CB8D5E70EB1493A7 /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3313A003A3ABADD09FB98E9F7C20C378 /* SWRevealViewController-dummy.m */; };
 		78FDD1CA26AC4B949150758A7D414487 /* UIRefreshControl+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D02182D0ADEE44A90BDF2870965C27 /* UIRefreshControl+RACCommandSupport.m */; };
 		797AD21F40B201B6A09704CA5B6E4480 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506F1E5919E21C63A64A3B3610927E9 /* NSArray+RACSequenceAdditions.m */; };
 		79B1F7019BB5B6383375451FA23A9255 /* NSObject+RACDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = C518275B6F1E7C982276D24698273E55 /* NSObject+RACDeallocating.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,7 +213,6 @@
 		F3DB3054DD3E1D3A637DD464BF92409C /* RACKVOChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F0C564FFAB85ABE495146FDD5E3DFC /* RACKVOChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4FC68DFE39BDEED80B1FCC28E7C00EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A635401944412E396EA69FF81D70EAD8 /* Foundation.framework */; };
 		F5C761FA54A9899DB321643867B0D22D /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 060F2664237FD6BFA01600013C14C727 /* RACSubscriptionScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6998FA01050FCE6BC3E1EBAFB532475 /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3313A003A3ABADD09FB98E9F7C20C378 /* SWRevealViewController-dummy.m */; };
 		F69DB2538AD7AE0B5FDF7C5B781CAB60 /* RACScheduler+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B8A94DF129C20573FE426AC87E00A0 /* RACScheduler+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F75F6A637A7550588C34747D186BC676 /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6EB7261AF0E7D8B05DDB3FF1E22B0 /* RACSignalSequence.m */; };
 		FA0C3608A0580AD843AB5FFE5DAAFD76 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E715DE4504E09ADBBB1C0606457541F /* RACKVOProxy.m */; };
@@ -1125,7 +1125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C1F151894E8BB6470B806FC5D81A6F /* Build configuration list for PBXNativeTarget "SWRevealViewController" */;
 			buildPhases = (
-				194F6A39C06B7C4C21266FB9776155B6 /* Sources */,
+				50910C01A1B052F98891B1DC0D1DBFBE /* Sources */,
 				07743541F2AE6264B4C7F3617A3D4FB5 /* Frameworks */,
 				1ABE7A2F48A497FABAC0FDAEFF6EB301 /* Headers */,
 			);
@@ -1209,15 +1209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D368810E6F66989DE8A8D2BC9D32C5 /* Pods-DemoTest-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		194F6A39C06B7C4C21266FB9776155B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6998FA01050FCE6BC3E1EBAFB532475 /* SWRevealViewController-dummy.m in Sources */,
-				3344C97F4E4505B09C67C2587C4404AC /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1316,6 +1307,15 @@
 				92A09CD2078A763B5F79C2F3BA073BBE /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				96E7C3B82CBD5471956D52A75EA19837 /* UITextField+RACSignalSupport.m in Sources */,
 				6A9ADAA1C25E0BA65D7BC19E22DE357D /* UITextView+RACSignalSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50910C01A1B052F98891B1DC0D1DBFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787B2A0C78DFF660CB8D5E70EB1493A7 /* SWRevealViewController-dummy.m in Sources */,
+				31EBEDF10F8F248AED7608EB8FAE0CF4 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@
 		E9ADA94A1EE57109000AF97A /* NGService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA9491EE57109000AF97A /* NGService.m */; };
 		E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */; };
 		E9ADA95D1EE57A75000AF97A /* NGServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099FF1EE56489007F66DA /* NGServiceTest.m */; };
+		E9ADA9601EE57DE7000AF97A /* NGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA95F1EE57DE7000AF97A /* NGUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		E9ADA94D1EE5713D000AF97A /* NGService+Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGService+Registration.m"; sourceTree = "<group>"; };
 		E9ADA9531EE579CE000AF97A /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9ADA9571EE579CE000AF97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		E9ADA95E1EE57DE7000AF97A /* NGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGUser.h; sourceTree = "<group>"; };
+		E9ADA95F1EE57DE7000AF97A /* NGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +337,8 @@
 		FCA0B42B8A9975C217B72F88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E9ADA95E1EE57DE7000AF97A /* NGUser.h */,
+				E9ADA95F1EE57DE7000AF97A /* NGUser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				133127FF9B545C46B9C6ADA2 /* main.m in Sources */,
 				E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */,
 				E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */,
+				E9ADA9601EE57DE7000AF97A /* NGUser.m in Sources */,
 				E9ADA94E1EE5713D000AF97A /* NGService+Registration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
