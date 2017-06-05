@@ -285,6 +285,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="disconnectionButton" destination="sdH-3Q-47k" id="gjn-n0-d9y"/>
                         <outlet property="menuTableView" destination="tHz-wW-M42" id="mpa-Ke-utz"/>
                         <segue destination="rPd-h0-t4i" kind="show" identifier="PushMyAccount" customClass="SWRevealViewControllerSeguePushController" id="uiK-T7-EEy"/>
                     </connections>
@@ -1911,6 +1912,6 @@ AABBAAAAAAAAAAAAAAAAAAFdFw
         <image name="menu_icon" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZVP-GX-qBq"/>
+        <segue reference="yYf-XV-6TV"/>
     </inferredMetricsTieBreakers>
 </document>

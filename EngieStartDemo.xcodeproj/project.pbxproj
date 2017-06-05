@@ -98,8 +98,8 @@
 		E9ADA96D1EE58734000AF97A /* NGMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMenuCell.m; sourceTree = "<group>"; };
 		E9ADA9731EE587D4000AF97A /* NGMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMyAccountViewController.h; sourceTree = "<group>"; };
 		E9ADA9741EE587D4000AF97A /* NGMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMyAccountViewController.m; sourceTree = "<group>"; };
-		E9ADA97A1EE59124000AF97A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		E9ADA97B1EE5A11F000AF97A /* NGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
+		E9ADA97C1EE5B229000AF97A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -714,7 +714,7 @@
 			children = (
 				E9ADA9421EE56F83000AF97A /* Base */,
 				E9ADA9441EE56FB8000AF97A /* en */,
-				E9ADA97A1EE59124000AF97A /* fr */,
+				E9ADA97C1EE5B229000AF97A /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

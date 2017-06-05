@@ -10,6 +10,7 @@
 
 //Views
 #import "NGMenuCell.h"
+#import "NGRoundButton.h"
 
 //third party
 #import "SWRevealViewController.h"
@@ -17,6 +18,7 @@
 @interface NGSideMenuViewController ()
 
 @property(strong, nonatomic) IBOutlet UITableView *menuTableView;
+@property(strong, nonatomic) IBOutlet NGRoundButton *disconnectionButton;
 
 @end
 
@@ -27,6 +29,10 @@
 {
     [super viewDidLoad];
     self.menuTableView.alwaysBounceVertical = NO;
+    
+    [self.disconnectionButton setTitle:_T(@"NG_Home_Menu_Disconnection_Title")
+                             forState:UIControlStateNormal+UIControlStateHighlighted+UIControlStateSelected];
+    
     [self.menuTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
                                     animated:NO scrollPosition:0];
 }
