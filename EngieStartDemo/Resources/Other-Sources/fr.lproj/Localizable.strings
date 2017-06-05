@@ -17,3 +17,10 @@
 "NG_Global_Yes"     = "Oui";
 "NG_Global_No"      = "Non";
 "NG_Global_Error"   = "Erreur";
+
+/*********************************************
+ * MARK: -  Registration
+ *********************************************/
+
+"NG_Registration_Form_Incomplete.title" = "Formulaire Incomplet";
+"NG_Registration_Form_Incomplete.message" = "L'email est obligatoire, Veuillez le renseigner";

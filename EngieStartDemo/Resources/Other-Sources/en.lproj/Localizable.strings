@@ -18,5 +18,9 @@
 "NG_Global_No"      = "NO";
 "NG_Global_Error"   = "ERROR";
 
+/*********************************************
+ * MARK: -  Registration
+ *********************************************/
 
-
+"NG_Registration_Form_Incomplete.title" = "Incomplete Form";
+"NG_Registration_Form_Incomplete.message" = "Email is required, please fill in";

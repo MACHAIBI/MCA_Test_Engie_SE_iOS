@@ -34,4 +34,17 @@
 }
 */
 
+#pragma mark - Public methods
+
+- (void)cancelAlertWithTitle:(NSString*)title message:(NSString*)message;
+{
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:title
+                                message:message
+                                preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:_T(@"NG_Global_Close")
+                                                     style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 @end

@@ -10,4 +10,6 @@
 
 @interface NGBaseViewController : UIViewController
 
+- (void)cancelAlertWithTitle:(NSString*)title message:(NSString*)message;
+
 @end

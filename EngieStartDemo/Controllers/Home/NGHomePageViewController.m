@@ -11,6 +11,12 @@
 // Views
 #import "NGRoundButton.h"
 
+//Category
+#import "NSString+Engie.h"
+
+//third party
+#import "ReactiveObjC.h"
+
 @interface NGHomePageViewController ()
 
 @property (weak, nonatomic) IBOutlet NGRoundButton *registrationButton;
@@ -28,6 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self observeEmailTextField];
+    [self observeCreateAccount];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +66,44 @@
                         self.registrationButton.hidden = display;
                     }
                     completion:NULL];
+}
+
+/* observe emailTextField modification and check if is a Valid Email*/
+- (void)observeEmailTextField
+{
+    @weakify(self)
+    [[self.emailTextField.rac_textSignal
+      map:^id(NSString *text) {
+          BOOL isEmailValid = [text isEmail];
+          UIColor *color = isEmailValid ? [UIColor blackColor] : [UIColor redColor];
+          return color;
+      }]
+     subscribeNext:^(UIColor *color) {
+         @strongify(self)
+         self.emailTextField.textColor = color;
+     }];
+}
+
+- (void)observeCreateAccount
+{
+    self.createAccountButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^(id _) {
+        
+        if ([self.emailTextField.text isEmail])
+        {
+            NSLog(@"Pressed button");
+        }
+        else
+        {
+            [self emptyFormAlert];
+        }
+        return [RACSignal empty];
+    }];
+}
+
+- (void)emptyFormAlert
+{
+    [self cancelAlertWithTitle:_T(@"NG_Registration_Form_Incomplete.title")
+                       message:_T(@"NG_Registration_Form_Incomplete.message")];
 }
 
 #pragma mark - IBAction
