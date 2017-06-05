@@ -5,3 +5,15 @@
   Created by CHAIBI  on 05/06/2017.
   Copyright © 2017 Engie. All rights reserved.
 */
+
+
+/*********************************************
+ * MARK: -  GENERAL
+ *********************************************/
+
+"NG_Global_Close"   = "Fermer";
+"NG_Global_OK"      = "OK";
+"NG_Global_Cancel"  = "Annuler";
+"NG_Global_Yes"     = "Oui";
+"NG_Global_No"      = "Non";
+"NG_Global_Error"   = "Erreur";

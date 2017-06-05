@@ -62,21 +62,20 @@
                                             <action selector="backToRegistration:" destination="IUC-gZ-WW0" eventType="touchUpInside" id="0Gg-XT-pd6"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-v5-ikP">
-                                        <rect key="frame" x="18.5" y="92" width="338" height="50"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email (Required)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-v5-ikP">
+                                        <rect key="frame" x="27.5" y="92" width="320" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="2WD-2S-iLi"/>
-                                            <constraint firstAttribute="width" constant="338" id="3gm-HJ-wMq"/>
+                                            <constraint firstAttribute="width" constant="320" id="3gm-HJ-wMq"/>
                                             <constraint firstAttribute="height" constant="50" id="5wR-fL-4KO"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grI-mD-kjz">
-                                        <rect key="frame" x="18.5" y="172" width="338" height="50"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grI-mD-kjz">
+                                        <rect key="frame" x="27.5" y="172" width="320" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="338" id="3xu-cN-CzD"/>
+                                            <constraint firstAttribute="width" constant="320" id="3xu-cN-CzD"/>
                                             <constraint firstAttribute="height" constant="50" id="b3F-2v-Qiw"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -91,7 +90,7 @@
                                             <constraint firstAttribute="height" constant="50" id="sGN-HI-McV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                        <state key="normal" title="Créer mon compte">
+                                        <state key="normal" title="Create My Account">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled" backgroundImage="button:cNi-aR-Yhs:backgroundImage">
@@ -122,7 +121,7 @@
                                     <constraint firstAttribute="width" constant="320" id="liB-t1-fdg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                <state key="normal" title="M'inscrir avec mon email">
+                                <state key="normal" title="Register with Email">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -158,6 +157,8 @@
                     <connections>
                         <outlet property="creatAccountView" destination="Gra-OV-gv8" id="pkn-zq-n2k"/>
                         <outlet property="createAccountButton" destination="cNi-aR-Yhs" id="Fg5-T8-xdb"/>
+                        <outlet property="emailTextField" destination="Bxy-v5-ikP" id="xkP-zn-zsK"/>
+                        <outlet property="nameTextField" destination="grI-mD-kjz" id="ABc-RC-REe"/>
                         <outlet property="registrationButton" destination="3JM-Hc-z0s" id="9Qh-Bz-poD"/>
                     </connections>
                 </viewController>

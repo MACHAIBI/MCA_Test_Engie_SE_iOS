@@ -1,7 +1,22 @@
-/* 
-  Localizable.strings
-  EngieStartDemo
+/*
+ Localizable.strings
+ EngieStartDemo
+ 
+ Created by CHAIBI  on 05/06/2017.
+ Copyright © 2017 Engie. All rights reserved.
+ */
 
-  Created by CHAIBI  on 05/06/2017.
-  Copyright © 2017 Engie. All rights reserved.
-*/
+
+/*********************************************
+ * MARK: -  GENERAL
+ *********************************************/
+
+"NG_Global_Close"   = "Close";
+"NG_Global_OK"      = "OK";
+"NG_Global_Cancel"  = "Cancel";
+"NG_Global_Yes"     = "YES";
+"NG_Global_No"      = "NO";
+"NG_Global_Error"   = "ERROR";
+
+
+

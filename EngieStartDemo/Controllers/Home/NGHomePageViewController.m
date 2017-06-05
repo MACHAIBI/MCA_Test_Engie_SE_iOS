@@ -15,15 +15,19 @@
 
 @property (weak, nonatomic) IBOutlet NGRoundButton *registrationButton;
 @property (weak, nonatomic) IBOutlet NGRoundButton *createAccountButton;
+
+@property (weak, nonatomic) IBOutlet UITextField   *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField   *nameTextField;
+
 @property (weak, nonatomic) IBOutlet UIView        *creatAccountView;
 
 @end
 
 @implementation NGHomePageViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

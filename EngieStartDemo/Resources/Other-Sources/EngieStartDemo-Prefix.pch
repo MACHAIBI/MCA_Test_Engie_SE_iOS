@@ -7,4 +7,7 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+#import "NGBaseViewController.h"
+#import "NGMacros.h"
+
 #endif

@@ -12,7 +12,6 @@
 		2FD02C258E0D55DB4C81328D /* libPods-EngieStartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0168514C63561BF5E02CC98C /* libPods-EngieStartDemo.a */; };
 		6AE8AFEC2E589DA841CABDC9 /* libPods-DemoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E4AA75BE8BC1051396548 /* libPods-DemoTest.a */; };
 		8E27A198CFDD6A5ACA56C533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FBE1664FA8797D484B069D /* Foundation.framework */; };
-		BA685C047BFDE2932829688D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85246B7D123D83D6283567 /* Main.storyboard */; };
 		C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33E5B284FB63B1A39593A76 /* Images.xcassets */; };
 		CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */; };
 		E96099E31EE54961007F66DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96099E51EE54961007F66DA /* Localizable.strings */; };
@@ -20,6 +19,7 @@
 		E96099EB1EE54D59007F66DA /* NGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099EA1EE54D59007F66DA /* NGBaseViewController.m */; };
 		E96099EE1EE54D85007F66DA /* NGHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */; };
 		E96099F21EE55016007F66DA /* NGRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E96099F11EE55016007F66DA /* NGRoundButton.m */; };
+		E96099F51EE55C2D007F66DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099F71EE55C2D007F66DA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,9 @@
 		E96099ED1EE54D85007F66DA /* NGHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGHomePageViewController.m; path = Home/NGHomePageViewController.m; sourceTree = "<group>"; };
 		E96099F01EE55016007F66DA /* NGRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRoundButton.h; sourceTree = "<group>"; };
 		E96099F11EE55016007F66DA /* NGRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRoundButton.m; sourceTree = "<group>"; };
-		EC85246B7D123D83D6283567 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E96099F41EE55AEB007F66DA /* NGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
+		E96099F61EE55C2D007F66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E96099F81EE55C2E007F66DA /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC3BEE6847C19610D081477 /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */,
-				EC85246B7D123D83D6283567 /* Main.storyboard */,
+				E96099F71EE55C2D007F66DA /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -207,6 +209,7 @@
 		D6CB0A884957CEEADB4536BD /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				E96099F41EE55AEB007F66DA /* NGMacros.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -360,7 +363,7 @@
 			files = (
 				E96099E31EE54961007F66DA /* Localizable.strings in Resources */,
 				C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */,
-				BA685C047BFDE2932829688D /* Main.storyboard in Resources */,
+				E96099F51EE55C2D007F66DA /* Main.storyboard in Resources */,
 				E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +530,15 @@
 				E96099E61EE54986007F66DA /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E96099F71EE55C2D007F66DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96099F61EE55C2D007F66DA /* en */,
+				E96099F81EE55C2E007F66DA /* fr */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
