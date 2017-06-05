@@ -1,18 +1,21 @@
 PODS:
   - ProgressHUD (2.4)
   - ReactiveObjC (3.0.0)
+  - SWRevealViewController (2.3.0)
   - WKRequest (1.2)
 
 DEPENDENCIES:
   - ProgressHUD
   - ReactiveObjC
+  - SWRevealViewController
   - WKRequest
 
 SPEC CHECKSUMS:
   ProgressHUD: 4b66b0df0e08519c5c7283a198fd2867a114c95a
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   WKRequest: 4c86c147d079bbb39b5d1a8459323286ec5f557d
 
-PODFILE CHECKSUM: d9ea255258baac07fa4b910c209b3e729b642d84
+PODFILE CHECKSUM: 109ec5336b52c35fbee8d22f19a1c2c0a1c35abe
 
 COCOAPODS: 1.1.1

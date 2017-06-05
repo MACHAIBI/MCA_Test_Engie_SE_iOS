@@ -6,7 +6,9 @@ target 'EngieStartDemo' do
 
 pod 'WKRequest'
 pod 'ReactiveObjC'
+pod 'SWRevealViewController'
 pod 'ProgressHUD'
+
 end
 
 target 'DemoTest' do
