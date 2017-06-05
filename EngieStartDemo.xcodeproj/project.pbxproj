@@ -11,13 +11,13 @@
 		2445F886E51E3530A6B675C3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 761AC9809FC4B1F924C397EB /* Settings.bundle */; };
 		2FD02C258E0D55DB4C81328D /* libPods-EngieStartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0168514C63561BF5E02CC98C /* libPods-EngieStartDemo.a */; };
 		6AE8AFEC2E589DA841CABDC9 /* libPods-DemoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E4AA75BE8BC1051396548 /* libPods-DemoTest.a */; };
-		894DCBC8E0CFFFD19564AEC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4B62E728C327C88A9F73D6 /* LaunchScreen.xib */; };
 		8E27A198CFDD6A5ACA56C533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FBE1664FA8797D484B069D /* Foundation.framework */; };
 		BA685C047BFDE2932829688D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85246B7D123D83D6283567 /* Main.storyboard */; };
 		C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33E5B284FB63B1A39593A76 /* Images.xcassets */; };
 		CE479064370A2AADC6EBDC2F /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFFD9DBF1F5A6F4CA14E20 /* NGAppDelegate.m */; };
 		E96099E01EE54366007F66DA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E96099DF1EE54366007F66DA /* Podfile */; };
 		E96099E31EE54961007F66DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96099E51EE54961007F66DA /* Localizable.strings */; };
+		E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		811F9F34DE5147ECA83CEA42 /* DemoTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DemoTest-Info.plist"; sourceTree = "<group>"; };
 		815125B68726F463493C0728 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC94D24EE5530FF9580FDA3 /* Pods-EngieStartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngieStartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EngieStartDemo/Pods-EngieStartDemo.release.xcconfig"; sourceTree = "<group>"; };
-		9B4B62E728C327C88A9F73D6 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9BCDB3DF73283AF3B53324CF /* Pods-DemoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest/Pods-DemoTest.release.xcconfig"; sourceTree = "<group>"; };
 		A17BE631B09E9548885E672A /* EngieStartDemo-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EngieStartDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A33E5B284FB63B1A39593A76 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		E96099DF1EE54366007F66DA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E96099E41EE54961007F66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E96099E61EE54986007F66DA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC85246B7D123D83D6283567 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EDC3BEE6847C19610D081477 /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +98,7 @@
 		3657FD9AA554F7AED836139F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				E96099E71EE54A30007F66DA /* LaunchScreen.storyboard */,
 				EC85246B7D123D83D6283567 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -173,20 +174,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C16162608A5D67DA76FFD138 /* Nibs */ = {
-			isa = PBXGroup;
-			children = (
-				9B4B62E728C327C88A9F73D6 /* LaunchScreen.xib */,
-			);
-			path = Nibs;
-			sourceTree = "<group>";
-		};
 		C32F6AB6A36F6EBF0EFCF19F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				A33E5B284FB63B1A39593A76 /* Images.xcassets */,
 				3657FD9AA554F7AED836139F /* Storyboards */,
-				C16162608A5D67DA76FFD138 /* Nibs */,
 				2A52880F723A4C37EBB9C4BB /* Other-Sources */,
 				761AC9809FC4B1F924C397EB /* Settings.bundle */,
 			);
@@ -349,8 +341,8 @@
 				E96099E31EE54961007F66DA /* Localizable.strings in Resources */,
 				C5EFF0183D2DC1B349D5D42F /* Images.xcassets in Resources */,
 				BA685C047BFDE2932829688D /* Main.storyboard in Resources */,
+				E96099E81EE54A30007F66DA /* LaunchScreen.storyboard in Resources */,
 				E96099E01EE54366007F66DA /* Podfile in Resources */,
-				894DCBC8E0CFFFD19564AEC6 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
