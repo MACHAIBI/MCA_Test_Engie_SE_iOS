@@ -23,4 +23,31 @@ static NGUser *_sharedInstance = nil;
     return _sharedInstance;
 }
 
+#pragma mark - Instance Methods
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeObject:self.idUser forKey:@"idUser"];
+    [encoder encodeObject:self.email forKey:@"email"];
+    [encoder encodeObject:self.name forKey:@"name"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder
+{
+    if((self = [super init]))
+    {
+        self.idUser = [decoder decodeObjectForKey:@"idUser"];
+        self.email  = [decoder decodeObjectForKey:@"email"];
+        self.name   = [decoder decodeObjectForKey:@"name"];
+    }
+    return self;
+}
+
++ (void)resetUser
+{
+    _sharedInstance.idUser  = nil;
+    _sharedInstance.email   = nil;
+    _sharedInstance.name    = nil;
+}
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "NGService+Registration.h"
+//Model
+#import "NGUser.h"
 
 #pragma mark - Defines & Constants
 static NSString *registrationURL = @"http://jsonplaceholder.typicode.com/users";
@@ -22,11 +24,23 @@ static NSString *registrationURL = @"http://jsonplaceholder.typicode.com/users";
                                             if (error) completionHandler(error,nil);
                                             
                                             NSError *localError = nil;
-                                            NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&localError];
+                                            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&localError];
                                             
-                                            completionHandler(error,parsedObject);
+                                            NGUser *user = [self parseUser:json];
+
+                                            completionHandler(error,user);
                                             
                                         }];
+}
+
++ (NGUser*)parseUser:(NSDictionary*)dict
+{
+    NGUser *user    = [NGUser sharedInstance];
+    user.idUser     = dict[@"id"];
+    user.email      = dict[@"user"][@"email"];
+    user.name       = dict[@"user"][@"name"];
+    
+    return user;
 }
 
 @end

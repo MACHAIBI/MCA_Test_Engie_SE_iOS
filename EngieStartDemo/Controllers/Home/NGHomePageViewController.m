@@ -14,6 +14,9 @@
 //Category
 #import "NSString+Engie.h"
 
+//Model
+#import "NGUser.h"
+
 //Services
 #import "NGService+Registration.h"
 
@@ -116,10 +119,10 @@
     NSDictionary *params = @{@"user":@{ @"email":self.emailTextField.text,
                                         @"name":self.nameTextField.text}};
     
-    [NGService registrationWithDictionary:params completionHandler:^(NSError *error, NSDictionary *json){
-        if (!error)
+    [NGService registrationWithDictionary:params completionHandler:^(NSError *error, NGUser *user){
+        if (!error && user.email != nil)
         {
-            NSLog(@"success");
+            [NGAppConfig saveUser:user];
             [ProgressHUD showSuccess];
         }
         else

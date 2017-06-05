@@ -9,5 +9,6 @@
     @import Foundation;
 #import "NGBaseViewController.h"
 #import "NGMacros.h"
+#import "NGAppConfig.h"
 
 #endif

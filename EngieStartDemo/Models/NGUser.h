@@ -18,4 +18,8 @@
 
 + (id)sharedInstance;
 
+#pragma mark - Instance Methods
+
++ (void)resetUser;
+
 @end
