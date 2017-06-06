@@ -8,7 +8,7 @@ La réalisation de l'application m'a pris 6h de travail.
 
 > Quels sont les points les plus travaillés de ton app ?  
 
-la UI (c'est ce que l'utilisateur voit en premier, et j'y attache une granade importance).
+la UI (c'est ce que l'utilisateur voit en premier, et j'y attache une grande importance).
 
 > Quels outils as-tu utilisé (IDE, gestionnaire de version,...) ?
 
